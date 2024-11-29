@@ -1,0 +1,14 @@
+input_path:../../dataset/stackoverflow.txt
+num_compers:1
+gdmin_deg_ratio:0.96
+gnmin_size:120
+TIME_THRESHOLD:86400
+BIGTASK_THRESHOLD:200
+tasks_per_fetch_g:1
+Qbig_capacity:16
+Qreg_capacity:512
+BT_TASKS_PER_FILE:4
+MINI_BATCH_NUM:40
+RT_TASKS_PER_FILE:32
+BT_THRESHOLD_FOR_REFILL:8
+RT_THRESHOLD_FOR_REFILL:128
