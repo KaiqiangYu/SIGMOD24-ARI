@@ -21,7 +21,7 @@ Memory: `128GB` & CPU: `Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GH`
 Packages/Libraries Needed: `CMake 2.8` (optional), `makefile` and `Python3` (including `numpy` and `matplotlib` for ploting figures)
 
 ## 3. Datasets info
-All datasets used in our experiments are from the [KONECT](http://konect.cc/networks/ "KONECT") website. We provided four small datasets, i.e., Divorce, Cfat, Cities, and Writer, in the folder "./code/dataset".
+All datasets used in our experiments are from the [KONECT](http://konect.cc/networks/ "KONECT") website. We provided four small datasets, i.e., Divorce, Cfat, Cities, and Writer, in the folder "./code/dataset". **You need to unzip the dataset first.**
 
 
 ## 4. Compile and Usage
@@ -65,7 +65,7 @@ We have provided the scripts for reproducing the results. If you want to learn t
 
 ## 5. Scripts for reproducing and visualizing the key results
 
-We provide the scripts for reproducing and visualizing Figure 7, Figure 8 (a-d), and Figure 9 (a-d) in the folder `./Exp-Rep`. We remark that **before conducting this step, you need to ensure that both DCFastQC and Quick+ have been complied successfully**.
+We provide the scripts for reproducing and visualizing Figure 7, Figure 8 (a-d), and Figure 9 (a-d) in the folder `./Exp-Rep`. We remark that **before conducting this step, you need to ensure that both DCFastQC and Quick+ have been complied with successfully, and the datasets are unzipped**.
 
 ### 5.1. Reproducing and visualizing Figure 7 under folder `./Exp-Rep`
 
