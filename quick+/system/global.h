@@ -11,9 +11,8 @@
 #include <cstring>
 #include <stack>
 #include <bits/stdc++.h>
-// If not Linux (e.g. Windows), include direct.h because it doesn't work in Linux.
-#ifndef __linux__
-#include <direct.h>
+#ifdef _WIN32
+#include <direct.h>     // Include direct.h only for Windows
 #endif
 
 #define hash_map __gnu_cxx::hash_map // ??
@@ -116,11 +115,11 @@ float log_time(const string msg, const timepoint start_time, const float latest_
 // Disk operations
 void make_directory(const char *name)
 {
-#ifdef __linux__ // check if linux
-	mkdir(name, S_IRWXU);
+#ifdef _WIN32
+    // Works on Windows when include direct.h, but direct.h doesn't work on linux as it was "provided by Microsoft Windows".
+    _mkdir(name);
 #else
-	// Works on Windows when inclue direct.h, but direct.h doesn't work on linux as it was "provided by Microsoft Windows".
-	_mkdir(name); 
+    mkdir(name, S_IRWXU);  // POSIX-compliant
 #endif
 }
 
