@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 res1=[86400,86400,86400,86400,86400]
-with open("Exp9d_res1.txt","r") as f:
+with open("Exp3d_res1.txt","r") as f:
 	str1=f.readline()
 	i=0
 	while str1 is not None and str1 != '':
@@ -15,7 +15,7 @@ with open("Exp9d_res1.txt","r") as f:
 f.close()
 
 res2=[86400,86400,86400,86400,86400]
-with open("Exp9d_res2.txt","r") as f:
+with open("Exp3d_res2.txt","r") as f:
 	str1=f.readline()
 	i=0
 	while str1 is not None and str1 != '':
