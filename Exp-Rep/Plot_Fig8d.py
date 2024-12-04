@@ -40,7 +40,7 @@ y1=[[192.236,229.543,257.261,272.366,341.439],
 plt.ylim((1,1000000))
 
 labels=[]
-y=[res1,res2]
+y=[[],[]]
 for i in range(len(labels1)-1,-1,-1):
 	labels.append(labels1[i])
 	y[0].append(y1[0][i])
